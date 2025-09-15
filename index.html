@@ -2,13 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Portafolio GitHub</title>
+  <title>Portafolio de Michel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hola, soy michel</h1>
-  <p>Bienvenido a mi portafolio. Aquí puedes ver todos mis proyectos en GitHub:</p>
-  <div id="repos-container">Cargando repositorios...</div>
+  <header>
+  <div class="header-container">
+    <img src="perfil.png" alt="Foto de Michel" class="profile-img">
+    <div class="header-text">
+      <h1>Wilmer Michel Condori Alejo</h1>
+      <p>estudiante de ingenieria de sistemas | Portafolio academico</p>
+      <p>
+        <a href="mailto:origami.18.wmca@gmail.com">correo elctronico</a> |
+        <a href="https://github.com/Wilmer270598" target="_blank">GitHub</a>
+
+      </p>
+    </div>
+    </div>
+  </header>
+
+
+
+  <main>
+  <section class="projects-section">
+    <h2>Proyectos en GitHub</h2>
+
+    <!-- Checkbox para mostrar descripción -->
+    <label class="toggle-desc">
+  <input type="checkbox" id="show-desc">
+  Mostrar información sobre mis habilidades
+</label>
+
+<p id="developer-desc" class="hidden">
+  Soy estudiante de Ingeniería de Sistemas en la Universidad Domingo Savio (Santa Cruz de la Sierra-Bolivia), apasionado por el desarrollo de software y realización de 
+  paginas web.  
+  Tengo experiencia en el <strong>modelo MVC</strong>, conozco conceptos del <strong>modelo por capas</strong>, y manejo bases de datos con <strong>SQL Server</strong>.  
+  Además, he trabajado con frameworks como <strong>Laravel</strong> y <strong>Angular</strong>, desarrollando proyectos  personales.  
+  A pesar que me falta mucho por conocer me caracterizo por mi compromiso de aprender, ademas me defiendo a la hora de reaizar trabajos individuales o la facilidad para trabajar en equipo.
+</p>
+
+
+    <div id="repos-container">Cargando repositorios...</div>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Michel Condori. Todos los derechos reservados.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

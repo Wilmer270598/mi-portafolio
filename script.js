@@ -1,5 +1,7 @@
-const username = "Wilmer270598"; // <- Cambia esto por tu usuario
+const username = "Wilmer270598"; // Cambia por tu usuario
 const container = document.getElementById("repos-container");
+const checkbox = document.getElementById('show-desc');
+const desc = document.getElementById('developer-desc');
 
 fetch(`https://api.github.com/users/${username}/repos`)
   .then(response => response.json())
@@ -19,3 +21,10 @@ fetch(`https://api.github.com/users/${username}/repos`)
     container.innerHTML = "Error al cargar los repositorios.";
     console.error(error);
   });
+  checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    desc.style.display = 'block';
+  } else {
+    desc.style.display = 'none';
+  }
+});
